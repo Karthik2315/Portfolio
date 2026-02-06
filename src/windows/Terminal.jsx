@@ -1,3 +1,4 @@
+import WindowControls from '#components/WindowControls';
 import { techStack } from '#constants';
 import windowWrapper from '#hoc/windowWrapper'
 import { Check, Flag } from 'lucide-react';
@@ -7,7 +8,7 @@ const Terminal = () => {
   return (
     <>
       <div id='window-header'>
-        <p>Windown Controls</p>
+        <WindowControls />
         <h2>Tech Stack</h2>
       </div>
       <div className='techstack'>
