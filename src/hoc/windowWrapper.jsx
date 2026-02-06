@@ -24,7 +24,7 @@ const windowWrapper = (Component,windowKey) => {
           y:40
         },{
           scale:1,
-          duration:.8,
+          duration:0.5,
           opacity:1,
           y:0,
           ease:"power3.out"
