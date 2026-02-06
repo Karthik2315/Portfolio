@@ -1,11 +1,16 @@
+import WindowControls from '#components/WindowControls';
+import windowWrapper from '#hoc/windowWrapper'
 import React from 'react'
 
 const Resume = () => {
   return (
-    <div>
-      
-    </div>
+    <>
+      <div id='window-header' >
+        <WindowControls target="resume" />
+      </div>
+    </>
   )
 }
 
-export default Resume
+const ResumeWindow = windowWrapper(Resume,"resume");
+export default ResumeWindow

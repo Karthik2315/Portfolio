@@ -5,6 +5,7 @@ import React from 'react'
 import { Draggable } from 'gsap/Draggable';
 import gsap from 'gsap';
 import Terminal from '#windows/Terminal';
+import Resume from '#windows/Resume';
 gsap.registerPlugin(Draggable);
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
       <Welcome />
       <Dock />
       <Terminal />
+      <Resume />
     </main>
   )
 }
