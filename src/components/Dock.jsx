@@ -50,7 +50,7 @@ const Dock = () => {
   const toggleApp = (app) => {
     if(!app.canOpen) return ;
     const window_temp = windows[app.id];
-    if(window_temp)
+    if(!window_temp)
     {
       return;
     }
@@ -59,7 +59,6 @@ const Dock = () => {
     }else{
       openWindow(app.id)
     }
-    console.log(windows)
   }
   return (
     <section id='dock'>
