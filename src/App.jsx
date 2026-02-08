@@ -7,6 +7,7 @@ import gsap from 'gsap';
 import Terminal from '#windows/Terminal';
 import Resume from '#windows/Resume';
 import Finder from '#windows/Finder';
+import Text from '#windows/Text';
 gsap.registerPlugin(Draggable);
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Terminal />
       <Resume />
       <Finder />
+      <Text />
     </main>
   )
 }
