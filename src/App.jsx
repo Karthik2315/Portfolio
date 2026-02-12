@@ -10,10 +10,13 @@ import Finder from '#windows/Finder';
 import Text from '#windows/Text';
 import Image from '#windows/Image';
 import Contact from '#windows/Contact';
+import ParticlesBg from './ParticlesBg.jsx';
 gsap.registerPlugin(Draggable);
 
 const App = () => {
   return (
+    <>
+      <ParticlesBg />
     <main>
       <Navbar />
       <Welcome />
@@ -25,6 +28,7 @@ const App = () => {
       <Image />
       <Contact />
     </main>
+</>
   )
 }
 
